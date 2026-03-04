@@ -1,0 +1,7 @@
+{
+    "dependencies": ["."],
+    "graphs": {
+      "subo_agent": "./src/agent.py:multi_agent"
+    },
+    "env": ".env"
+  }

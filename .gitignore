@@ -1,0 +1,7 @@
+.env
+__pycache__/
+.venv/
+.chainlit/
+data/airline.db
+data/faiss_index/
+chainlit.md
