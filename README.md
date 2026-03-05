@@ -1,6 +1,6 @@
 #  🤖  SUBO
 
-A sophisticated, multi-agent customer service assistant for "Light Airlines." This project implements a production-grade **LangGraph** routing architecture to handle dynamic database operations (flights, bookings, tickets), Retrieval-Augmented Generation (airline policies), and general conversational memory.
+A sophisticated, multi-agent customer service assistant for "Egypt Airway." This project implements a production-grade **LangGraph** routing architecture to handle dynamic database operations (flights, bookings, tickets), Retrieval-Augmented Generation (airline policies), and general conversational memory.
 
 
 
@@ -55,7 +55,7 @@ General Agent: Handles greetings, chit-chat, and fallback queries while maintain
 
 ## 🛠️ Tech Stack
 * **Framework:** [LangGraph](https://python.langchain.com/v0.2/docs/langgraph/) & LangChain Core
-* **LLM:** Google Gemini (`gemini-2.5-flash` / `gemini-3.0-flash`)
+* **LLM:** Google Gemini (`gemini-2.5-flash`) OR Local LLMs via Ollama (e.g., `llama3.1` for local, rate-limit-free execution)
 * **Vector Database:** FAISS (Local) + HuggingFace Embeddings (`all-mpnet-base-v2`)
 * **Relational Database:** SQLite3 + Faker (for synthetic data generation)
 * **UI Interface:** Chainlit
@@ -68,7 +68,7 @@ General Agent: Handles greetings, chit-chat, and fallback queries while maintain
 ### Prerequisites
 * Python 3.10+
 * [uv](https://docs.astral.sh/uv/) installed on your system.
-* A [Google Gemini API Key](https://aistudio.google.com/).
+* A [Google Gemini API Key](https://aistudio.google.com/) **OR** [Ollama](https://ollama.com/) installed locally to run `llama3.1`.
 
 ### 1. Installation
 Clone the repository and use `uv` to instantly build the virtual environment and sync dependencies:
