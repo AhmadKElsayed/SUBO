@@ -51,12 +51,25 @@ if __name__ == "__main__":
     print("🚀 STARTING MULTI-AGENT TESTS...\n")
     
     run_test("Hello! My name is Kamel. I am testing the system.")
-    #time.sleep(4) # <--- ADD THIS
+    #time.sleep(4)
     
     run_test("What is my name?")
-    #time.sleep(4) # <--- ADD THIS
+    #time.sleep(4)
     
     run_test("What is the free baggage allowance policy?")
-    #time.sleep(4) # <--- ADD THIS
+    #time.sleep(4)
     
     run_test("Can you show me the next available flights from Dubai to London?")
+    #time.sleep(4)
+    
+    run_test("I would like to make a booking on the earliest one")
+    #time.sleep(4)
+    
+    run_test("Economy")
+    #time.sleep(4)
+    
+    run_test("My customer ID is 144")
+    #time.sleep(4)
+    
+    run_test("Confirm booking")
+    
