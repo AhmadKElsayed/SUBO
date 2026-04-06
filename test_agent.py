@@ -1,14 +1,9 @@
-import os
-from src.database import DB_PATH, init_air_db
 from src.rag_tools import init_rag_index
 from src.agent import multi_agent
+import time
 
 # --- 1. Bootstrapping ---
 print("System Boot: Checking dependencies...")
-if not os.path.exists(DB_PATH):
-    print("Database not found. Initializing...")
-    init_air_db(DB_PATH, reset=False)
-
 print("Checking RAG index...")
 init_rag_index()
 print("System Ready!\n")
@@ -45,31 +40,28 @@ def run_test(query: str):
     print("-" * 60)
 
 # --- 3. Execute Tests ---
-import time
-
 if __name__ == "__main__":
     print("🚀 STARTING MULTI-AGENT TESTS...\n")
     
     run_test("Hello! My name is Kamel. I am testing the system.")
-    #time.sleep(4)
+    time.sleep(2)
     
     run_test("What is my name?")
-    #time.sleep(4)
+    time.sleep(2)
     
     run_test("What is the free baggage allowance policy?")
-    #time.sleep(4)
+    time.sleep(2)
     
     run_test("Can you show me the next available flights from Dubai to London?")
-    #time.sleep(4)
+    time.sleep(2)
     
     run_test("I would like to make a booking on the earliest one")
-    #time.sleep(4)
+    time.sleep(2)
     
     run_test("Economy")
-    #time.sleep(4)
+    time.sleep(2)
     
     run_test("My customer ID is 144")
-    #time.sleep(4)
+    time.sleep(2)
     
     run_test("Confirm booking")
-    

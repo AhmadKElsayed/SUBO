@@ -1,7 +1,20 @@
+# Environments
 .env
-__pycache__/
 .venv/
-.chainlit/
+env/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local Databases & Vector Stores
 data/airline.db
 data/faiss_index/
-chainlit.md
+*.sqlite3
+*.db
+
+# OS Generated Files
+.DS_Store
+Thumbs.db

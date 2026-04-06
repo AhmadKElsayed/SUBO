@@ -1,24 +1,21 @@
-import os
 import chainlit as cl
-from src.database import DB_PATH, init_air_db
 from src.rag_tools import init_rag_index
 from src.agent import multi_agent
 
 # --- Initialization Checks ---
 # These run exactly once when the server starts
-if not os.path.exists(DB_PATH):
-    print("Database not found. Initializing...")
-    init_air_db(DB_PATH, reset=False)
-
 print("Checking RAG index...")
 init_rag_index()
+print("UI Server Ready!")
 
 # --- Chainlit UI Hooks ---
 @cl.on_chat_start
 async def on_chat_start():
     # Use Chainlit's user session to track LangGraph memory thread
     cl.user_session.set("config", {"configurable": {"thread_id": cl.user_session.get("id")}})
-    await cl.Message(content="Welcome to Light Airlines! I am your AI Assistant. How can I help you today?").send()
+    
+    # Updated branding to match your new repository!
+    await cl.Message(content="Welcome to Egypt Airway Airlines! I am SUBO, your AI Assistant. How can I help you today?").send()
 
 @cl.on_message
 async def on_message(message: cl.Message):

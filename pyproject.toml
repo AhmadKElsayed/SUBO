@@ -20,4 +20,6 @@ dependencies = [
     "sqlalchemy>=2.0.31",
     "langgraph-cli[inmem]>=0.4.12",
     "langchain-ollama>=1.0.1",
+    "psycopg2-binary>=2.9.11",
+    "langgraph-checkpoint-postgres>=3.0.5",
 ]
