@@ -1,4 +1,3 @@
-```markdown
 #  🤖  SUBO
 
 A sophisticated, multi-agent customer service assistant for "Egypt Airway." This project implements a production-grade **LangGraph** routing architecture to handle dynamic database operations (flights, bookings, tickets), Retrieval-Augmented Generation (airline policies), and general conversational memory.
@@ -135,5 +134,4 @@ SUBO/
     ├── db_tools.py        # Custom API tools for PostgreSQL CRUD
     ├── rag_tools.py       # FAISS retriever setup and tools
     └── agent.py           # LangGraph nodes, edges, and compilation
-```
 ```
