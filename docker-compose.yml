@@ -4,7 +4,7 @@ services:
   postgres:
     image: pgvector/pgvector:pg16
     container_name: airline_postgres
-    restart: always
+    restart: no
     environment:
       POSTGRES_USER: airline_admin
       POSTGRES_PASSWORD: supersecretpassword

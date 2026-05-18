@@ -12,7 +12,7 @@ load_dotenv()
 
 fake = Faker()
 
-DB_URL = os.getenv("DATABASE_URL", "postgresql://airline_admin:supersecretpassword@localhost:5432/egypt_airways")
+DB_URL = os.getenv("SUBO_DATABASE_URL", "postgresql://airline_admin:supersecretpassword@localhost:5432/egypt_airways")
 
 AIRPORTS = [
     ("DXB", "Dubai International Airport", "Dubai", "UAE", "Asia/Dubai"),

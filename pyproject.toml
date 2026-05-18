@@ -22,4 +22,5 @@ dependencies = [
     "langchain-ollama>=1.0.1",
     "psycopg2-binary>=2.9.11",
     "langgraph-checkpoint-postgres>=3.0.5",
+    "asyncpg>=0.31.0",
 ]

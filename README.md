@@ -76,7 +76,7 @@ uv sync
 Create a `.env` file in the root directory and add your API key and database connection string:
 ```env
 GOOGLE_API_KEY=your_actual_api_key_here
-DATABASE_URL=postgresql://airline_admin:supersecretpassword@localhost:5432/egypt_airways
+SUBO_DATABASE_URL=postgresql://airline_admin:supersecretpassword@localhost:5432/egypt_airways
 ```
 
 ### 3. Data Initialization
